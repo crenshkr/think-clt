@@ -1,0 +1,630 @@
+/*Both imported font from google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+/*Border and padding, it wont change width*/
+* {
+    box-sizing: border-box;
+}
+
+/*applying font to everything and centering it*/
+
+body {
+
+    
+    font-family: 'Montserrat', sans-serif;
+    /*show centered box(insead of left to right*/
+    
+   
+    /* hides the scroll bars from popping up*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*takes away margin */
+    margin: 0;
+    background-color: rgb(174, 175, 255);
+    
+
+}
+
+
+
+/*NAVIGATION*/
+
+nav {
+    background-color: rgba(255, 255, 255, 0.933) ;
+    margin: 0px;
+    padding: 0px;
+    border-color: brown;
+    min-width: 300px;
+    width: 100%;
+    
+    
+    
+}
+.ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    
+    
+}
+
+.li .a {
+    color: darkblue;
+    
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    transition: linear ease-in .3s;
+}
+  
+/*HOME PAGE*/   
+
+
+
+.box-1 {
+  
+    
+    width: 50vw;
+    height: 70vh;
+    min-height: 50vh;
+    color: #eee;
+    text-shadow: rgb(0, 0, 0) 3px 3px 6px;
+    flex-wrap: nowrap;
+    padding-top: 50px;
+    margin-left: 25%;
+
+    font-family: 'Montserrat';
+    
+    
+}
+
+
+
+
+.home_buttons {
+    color: rgb(255, 255, 255);
+  
+
+    
+}
+
+
+
+#b1 #b2 {
+    color: #eee;
+}
+
+/*SECTION LAYOUT*/
+#grid-1 {
+    background-image: url(/project_picsjs/thinknext-2.png);
+    min-height: 100vh;
+    
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+}
+
+
+#grid-2 {
+    background-color: rgb(174, 175, 255);
+    height: 80vh;
+    display: flex;
+   
+}
+#grid-3 {
+    background-color: rgb(174, 175, 255);
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    
+    
+    
+}
+#grid-4 {
+    background-color: rgb(174, 175, 255);
+    height: 26vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+#grid-5 {
+    background-color: rgb(174, 175, 255);
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#grid-6 {
+    background-color: rgb(255, 255, 255);
+    height: 120vh;
+    width: auto;
+   
+    margin: 10%;
+    padding: 0%;
+    
+    
+    
+    
+
+    
+}
+
+/*SECTION 1*/
+
+.a1 {
+    color: bisque;
+}
+
+.button3  {
+  border: none;
+  background-color: rgb(235, 66, 0);
+  color: #eee;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  
+  cursor: pointer;
+  
+  
+}
+
+.button2 {
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(235, 66, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+ 
+  cursor: pointer;
+  
+}
+
+.button2:hover {
+  border: none;
+  background-color: rgb(209, 42, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+ 
+  font-size: 16px;
+ 
+  cursor: pointer;
+  
+}
+
+.button1 {
+    border: none;
+    background-color: rgb(0, 89, 255);
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 18px;
+  }
+
+ 
+  #home-font {
+      font-size: 70px ;
+  }
+
+  /*SECTION 2*/
+
+  .box-2 {
+      width: 50vw;
+      height: 80vh;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-image: url(/project_picsjs/boy-smiling-with-book_orig.jpg);
+      background-size: cover;
+      font-family: 'Montserrat';
+  }
+
+  .box-2-2 {
+    width: 50vw;
+    height: 80vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: azure;
+    color: rgb(47, 69, 110);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.button2-2 {
+    border: none;
+    background-color: rgb(235, 66, 0);
+    color: #eee;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+
+.textb2-2 {
+    color: #eee;
+    font-size: 16px;
+    
+}
+
+#section-2-head {
+    font-size: 45px;
+    font-family: 'Montserrat' ;
+    text-align: center;
+    margin: 6px;
+}
+
+.text2-2 {
+    margin: 20px;
+}
+
+/*SECTION 3*/
+
+
+.box-3-2 {
+    width: 50vw;
+    height: 80vh;
+    
+    background-image: url(/project_picsjs/caleb-and-maiye_orig.jpg);
+    background-size: cover;
+    font-family: 'Montserrat';
+}
+
+.box-3 {
+  width: 50vw;
+  height: 80vh;
+  
+  background-color: azure;
+  color: rgb(47, 69, 110);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.button3-2 {
+  border: none;
+  background-color: rgb(235, 66, 0);
+  color: #eee;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  
+
+}
+
+.textb3-2 {
+  color: #eee;
+  font-size: 17px;
+}
+
+#section-3-head {
+  font-size: 48px;
+  font-family: 'Montserrat' ;
+  text-align: center;
+}
+
+.text3-2 {
+    margin: 20px;
+}
+
+/* SECTION 4 */
+
+
+
+
+
+
+
+.box-4 {
+  
+    
+    width: 100vw;
+    min-width: 100vw;
+    height: 20vh ;
+    min-height: 20vh;
+    margin: 8px;
+    margin-top: 60px;
+    font-family: 'Montserrat';
+    /*border: solid red 6px;*/
+    
+ 
+    
+    
+}
+
+
+
+#sub-text-4, #section-4-head {
+    color: rgb(23, 36, 61);
+    padding: -10px;
+    
+
+}
+
+#sub-text-4 {
+    font-size: 25px;
+    
+    padding: -10px;
+}
+
+
+#section-4-head {
+    font-size: 56px;
+    padding: -30px;
+}
+
+/*SECTION 5*/
+
+
+
+.box-5 {
+    padding: 20px;
+
+    font-family: 'Montserrat';
+    width: 50%;
+    height: 40vh;
+    padding-left: 40px;
+    margin-top: 37px;
+    
+    
+    
+}
+
+
+
+.box-5-2 {
+    width: 50%;
+    height: 40vh;
+    padding: 20px;
+    font-family: 'Montserrat';
+    margin-top: 37px; 
+    padding-right: 40px;   
+}
+
+.button5-1 {
+    border: none;
+    background-color: rgb(235, 66, 0);
+    border-radius: 25px;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    
+
+}
+
+.button5-1:hover {
+    border: none;
+    background-color: rgb(209, 42, 0);
+    border-radius: 25px;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    
+
+}
+
+.a5 {
+    color: azure;
+    
+}
+
+/*SECTION 6*/
+
+.section-6 {
+    background-color: #eee;
+    height: 90vh;
+    display: flex;
+}
+.grid-container-6 {
+    background-color: #476ce4;
+    color: #eee;
+    position: relative;
+    width: 600px;
+    height: 400px;;
+    max-width: 600px;
+    border-radius: 15px  ;
+    margin: 20px auto;
+    padding: 50px 80px;
+    margin-top: 60px;
+}
+
+.thinkers {
+    font-size: 28px;
+}
+
+.user .user-img {
+    height:125px;
+    width: 125px;
+    border-radius: 50%;
+    
+}
+
+.user .role {
+    font-weight: normal;
+    
+    
+}
+
+.user-details {
+    margin-left: 20px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+@media (max-width: 750px) {
+    .grid-container-6 {
+        padding: 20px 30px;
+    }
+}
+
+.progress-bar {
+    background-color: #eee;
+    height: 4px;
+    width: 100%; 
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+
+}
+
+@keyframes grow {
+    0% {
+        transform : scaleX(0);
+    }
+}
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+.thinker-section {
+    width: 100%;
+    height:250vh;
+    background-color: rgb(174, 175, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.think-head  {
+    color: rgb(23, 36, 61);
+    font-size:45px ;
+   
+}
+
+.think-box {
+    width: 75%;
+    height: 250vh;
+    margin-left: 10%;
+    padding: 0;
+    
+    
+
+   
+
+}
+
+.think-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(15) 1fr;
+}
+
+.think-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height:150px;
+    width: 400px;
+    margin: 15px;
+    border-radius: 18px;
+}
+
+.think-pic {
+    height:125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+}
+
+.think-details {
+    
+    border: rgb(0, 0, 0, .75) 2px;
+    margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.csm-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100vh;
+    background-color: rgb(174, 175, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+
+}
+.csm-box {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    width: 1000px;
+    height: 500px;
+    border-radius: 18px;
+   
+}
+
