@@ -137,7 +137,7 @@ setInterval(updateTestimonial, 10000)
 
 const donate = document.getElementById('donate')
 donate.addEventListener("click", () => {
-    fetch("/create-checkout-session", {
+    fetch("http://localhost:3000/create-checkout-session", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -153,11 +153,11 @@ donate.addEventListener("click", () => {
 
     .then (res => {
         if (res.ok) return res.json()
-        return res.json().then (json => Promise.reject(json))
+        return res.json().then(json => Promise.reject(json))
     })
     .then(({ url }) => {
         console.log(url)
-       // window.location = url
+        window.location = url
     })
     .catch(e => {
         console.error(e.error)

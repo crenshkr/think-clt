@@ -77,19 +77,15 @@ a:hover {
 
 .box-1 {
   
-    
+    display: flex;
+    flex-direction: column;
     width: 50vw;
-    height: 70vh;
+    height: 50vh;
     min-height: 50vh;
     color: #eee;
     text-shadow: rgb(0, 0, 0) 3px 3px 6px;
     flex-wrap: nowrap;
-    padding-top: 50px;
-    margin-left: 25%;
-
-    font-family: 'Montserrat';
-    
-    
+    font-family: 'Montserrat';  
 }
 
 
@@ -108,44 +104,73 @@ a:hover {
     color: #eee;
 }
 
+.btn-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top:1em;
+}
+
+
 /*SECTION LAYOUT*/
-#grid-1 {
-    background-image: url(/project_picsjs/thinknext-2.png);
-    min-height: 100vh;
-    
+
+
+#section-1 {
+    background-image: url(/public/project_picsjs/thinknext-2.png);
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-size: cover;
     align-items: center;
     justify-content: center;
-   
-    
-
 }
 
+@media (min-width:550px) {
 
-#grid-2 {
+    #section-1   {
+        
+        height: 100vh;
+    }
+}
+
+#section-2 {
     background-color: rgb(174, 175, 255);
-    height: 80vh;
+    height: 90vh;
     display: flex;
    
 }
-#grid-3 {
+#section-3 {
     background-color: rgb(174, 175, 255);
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     
     
     
 }
-#grid-4 {
+#section-4 {
     background-color: rgb(174, 175, 255);
-    height: 26vh;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
+    justify-content: center;
+    align-items: center;
+    
 }
-#grid-5 {
+
+@media (min-width:550px) {
+    #section-4 {
+        background-color: rgb(174, 175, 255);
+        height: 95vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+
+}
+}
+#section-5 {
     background-color: rgb(174, 175, 255);
     height: 60vh;
     width: 100vw;
@@ -155,7 +180,7 @@ a:hover {
     padding-right: 40px;
 }
 
-#grid-6 {
+#section-6 {
     background-color: rgb(255, 255, 255);
     height: 120vh;
     width: auto;
@@ -230,28 +255,33 @@ a:hover {
     border-radius: 18px;
   }
 
- 
+
   #home-font {
-      font-size: 70px ;
+      font-size: 1.320em ;
   }
+
+  @media (min-width:550px) {
+    #home-font   {
+        font-size: 3em ;
+
+    }
+}
 
   /*SECTION 2*/
 
   .box-2 {
-      width: 50vw;
-      height: 80vh;
+      width: 50%;
+      height: 90vh;
       margin-top: 20px;
       margin-bottom: 20px;
       background-image: url(/project_picsjs/boy-smiling-with-book_orig.jpg);
       background-size: cover;
-      font-family: 'Montserrat';
+      
   }
 
   .box-2-2 {
-    width: 50vw;
-    height: 80vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 50%;
+    height: 90vh;
     background-color: azure;
     color: rgb(47, 69, 110);
     display: flex;
@@ -261,6 +291,8 @@ a:hover {
    
     
 }
+
+
 
 .button2-2 {
     border: none;
@@ -276,27 +308,44 @@ a:hover {
 
 .textb2-2 {
     color: #eee;
-    font-size: 16px;
+    font-size: 1.1em;
     
 }
 
+
 #section-2-head {
-    font-size: 45px;
+    font-size: 1em;
     font-family: 'Montserrat' ;
     text-align: center;
-    margin: 6px;
+    margin: .5em;
+}
+
+@media (min-width:550px) {
+    #section-2-head {
+        font-size: 45px;
+        font-family: 'Montserrat' ;
+        text-align: center;
+        margin: 6px;
+    }
 }
 
 .text2-2 {
+    font-size: .7em;
     margin: 20px;
 }
+
+@media (min-width:550px) {
+    .text2-2 {
+        margin: 20px;
+    }
+    }
 
 /*SECTION 3*/
 
 
 .box-3-2 {
-    width: 50vw;
-    height: 80vh;
+    width: 50%;
+    height: 90vh;
     
     background-image: url(/project_picsjs/caleb-and-maiye_orig.jpg);
     background-size: cover;
@@ -304,7 +353,22 @@ a:hover {
 }
 
 .box-3 {
-  width: 50vw;
+  width: 50%;
+  height: 90vh;
+  
+  background-color: azure;
+  color: rgb(47, 69, 110);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+@media (min-width:550px) {
+    .box-3 {
+  width: 50%;
   height: 80vh;
   
   background-color: azure;
@@ -316,6 +380,8 @@ a:hover {
  
   
 }
+}
+
 
 .button3-2 {
   border: none;
@@ -331,18 +397,43 @@ a:hover {
 
 .textb3-2 {
   color: #eee;
-  font-size: 17px;
+  font-size: .5em;
 }
 
+@media (min-width:550px) {
+    .textb3-2 {
+        color: #eee;
+        font-size: 17px;
+    }
+}
+
+
 #section-3-head {
-  font-size: 48px;
+  font-size: 1em;
   font-family: 'Montserrat' ;
   text-align: center;
 }
 
-.text3-2 {
-    margin: 20px;
+@media (min-width:550px) {
+    #section-3-head {
+        font-size: 48px;
+        font-family: 'Montserrat' ;
+        text-align: center;
+    }
 }
+
+.text3-2 {
+    font-size: .7em;
+    margin: 1em;
+}
+
+@media (min-width:550px) {
+    .text3-2 {
+        margin: 20px;
+    } 
+    
+}
+
 
 /* SECTION 4 */
 
@@ -355,12 +446,10 @@ a:hover {
 .box-4 {
   
     
-    width: 100vw;
-    min-width: 100vw;
-    height: 20vh ;
-    min-height: 20vh;
+    width: 80%;
+    height: 85vh ;
     margin: 8px;
-    margin-top: 60px;
+    
     font-family: 'Montserrat';
     /*border: solid red 6px;*/
     
@@ -386,29 +475,31 @@ a:hover {
 
 
 #section-4-head {
-    font-size: 56px;
-    padding: -30px;
+    font-size: 1em;
+    
 }
+
+
+
+
+
+.text-4-box {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    width: 100%;
+    height: 40vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
 
 /*SECTION 5*/
-
-
-
-.box-5 {
-    padding: 20px;
-
-    font-family: 'Montserrat';
-    width: 50%;
-    height: 40vh;
-    padding-left: 40px;
-    margin-top: 37px;
-    
-    
-    
-}
-
-
-
 .box-5-2 {
     width: 50%;
     height: 40vh;

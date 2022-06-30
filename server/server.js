@@ -5,7 +5,10 @@ const app = express()
 app.use(express.json())
 app.use(express.static("public"))
 
-const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
+const Stripe = require("stripe")
+
+const stripe = Stripe(process.env.STRIPE_PRIVATE_KEY)
+
 
 
 const storeItems = new Map([
