@@ -2,8 +2,13 @@ require("dotenv").config()
 
 const express = require("express")
 const app = express()
+const cors = require("cors")
 app.use(express.json())
-app.use(express.static("public"))
+app.use(
+    cors({
+      origin: "http://localhost:5500",
+    })
+  )
 
 const Stripe = require("stripe")
 
